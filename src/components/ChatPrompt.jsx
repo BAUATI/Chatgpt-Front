@@ -40,7 +40,7 @@ const ChatPrompt = () => {
       setConversations(newConversations)
       setPrompt('') // Limpiar el input inmediatamente para mejor UX
       
-      const res = await axios.post('https://chatgpt-back-phi.vercel.app/api/chat', { prompt })
+      const res = await axios.post('https://chatgpt-back-omega.vercel.app/api/chat', { prompt })
       
       // Agregar la respuesta de la IA a las conversaciones
       setConversations([
