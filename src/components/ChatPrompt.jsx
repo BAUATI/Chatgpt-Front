@@ -40,7 +40,7 @@ const ChatPrompt = () => {
       setConversations(newConversations)
       setPrompt('') // Limpiar el input inmediatamente para mejor UX
       
-      const res = await axios.post('https://chatgpt-backend-cyan.vercel.app', { prompt })
+      const res = await axios.post('https://chatgpt-backend-cyan.vercel.app/api/chat', { prompt })
       
       // Agregar la respuesta de la IA a las conversaciones
       setConversations([
